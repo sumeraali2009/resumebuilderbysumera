@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="Resume-form">
+    <h1>Resume Builder</h1>
+    <form>
+      <section class="section-contact">
+        <h2>Contact Information</h2>
+        <label>Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label>Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label>Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+      </section>
+      
+      <section class="section-education">
+        <h2>Education</h2>
+        <label>Degree:</label>
+        <input type="text" id="degree" name="degree"><br><br>
+        <label>Institution:</label>
+        <input type="text" id="institution" name="institution"><br><br>
+      </section>
+      
+      <section class="section-skills">
+        <h2>Skills</h2>
+        <textarea id="skills" name="skills" placeholder="Enter your skills separated by commas"></textarea>
+      </section>
+      
+      <button type="submit" id="generate-resume">Generate Resume</button>
+    </form>
+    
+    <div id="generated-resume">
+      <!-- Generated resume will be displayed here -->
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
